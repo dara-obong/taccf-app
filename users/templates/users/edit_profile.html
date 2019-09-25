@@ -1,0 +1,36 @@
+{% extends "blog/base.html" %} {% load crispy_forms_tags %} {% block post %}
+
+<section class="section-book" id="section-book">
+  <div class="row">
+    <div class="col">
+
+      <div class="book-profile">
+        <div class="book-profile__form">
+          <form method="POST" enctype="multipart/form-data" class="form">
+            {% csrf_token %}
+
+            <div class="u-margin-bottom-medium">
+              <h2 class="heading-secondary">
+                Edit
+              </h2>
+            </div>
+            <h4 class="text-success">
+
+              {{ uu_form | crispy }}
+              {{ pu_form | crispy }}
+            </h4>
+
+            <div class="form__group">
+              <button class="btn btn--white u-margin-top-small" type="submit">
+                Update
+              </button>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock post %}

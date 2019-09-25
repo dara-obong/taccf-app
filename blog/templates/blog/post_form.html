@@ -1,0 +1,35 @@
+{% extends "blog/base.html" %} {% load crispy_forms_tags %} {% block post %}
+
+<section class="section-book" id="section-book">
+    <div class="row">
+        <div class="col">
+
+            <div class="book">
+                <div class="book__form">
+
+                    <form method="POST" class="form">
+                        {% csrf_token %}
+                        <div class="u-margin-bottom-medium">
+                            <h1 class="heading-secondary">
+                                Blog Post
+                            </h1>
+                        </div>
+                        <h3 class="text-success">
+                            {{ form | crispy }}
+                        </h3>
+                        <br><br>
+                        <div class="form__group">
+                            <button class="btn btn--white">
+                                Post
+                            </button><br><br>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+{% endblock post %}

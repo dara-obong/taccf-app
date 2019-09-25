@@ -1,0 +1,78 @@
+{% extends "blog/base.html" %} {% load staticfiles %} {% block post %}
+
+<section class="section-blog">
+    <div class="header__logo-box">
+        <img src="{% static 'blog/img/tacc.jpg' %}" alt="Logo" class="header__logo">
+        <img src="{% static 'blog/img/nysc.jpg' %}" alt="Logo" class="header__logo">
+    </div>
+    <div class="bg-video">
+        <video class="bg-video__content" autoplay muted loop>
+            <source src="{% static 'blog/img/cross.mov' %}" type="video/webm">
+            your browser does not support this video
+        </video>
+    </div>
+
+
+    <div class="row">
+        <div class="col-1-of-2">
+            <div class="blog">
+                <figure class="blog__shape">
+                    <img src="{{ object.author.profile.image.url }}" alt="profile picture" class="blog__img">
+                    <figcaption class="blog__caption">
+
+                        <a class="text-white"
+                            href="{% url 'blog:user-posts' post.author.username %}">{{ post.author.first_name }}
+                            {{ post.author.last_name }}</a>
+                    </figcaption>
+                </figure>
+                <div class="blog__post-box">
+                    {% if object.author == user %}
+                    <a href="{% url 'blog:post-delete' object.id %}"
+                        class="u-margin-right-medium btn-text float-right">Delete</a>
+                    <a href="{% url 'blog:post-update' object.id %}"
+                        class="u-margin-right-medium btn-text float-right">Update</a>
+
+                    {% endif %}
+                    <h3><a class="text-success"
+                            href="{% url 'blog:user-posts' post.author.username %}">{{ object.author }}</a></h3>
+                    <h3><a href="{% url 'blog:post-detail' post.id %}" class="heading-tertiary u-margin-bottom-small">
+                            {{ object.title}}
+                        </a></h3>
+                    <small
+                        class="heading-tertiary u-margin-bottom-small">{{ object.date_posted | date:"F d, Y"}}</small>
+                    <p class="paragraph">{{ object.content }}</p>
+
+                </div>
+                {% if user.is_authenticated %}
+                <div class="float-right u-margin-top-medium-2">
+                    <a href="{% url 'blog:add-comment' pk=post.pk %}" class="btn-text">Add Comment &rarr;</a>
+                </div>
+
+                {% endif %}
+            </div>
+
+        </div>
+
+        <div class="col-1-of-2">
+            <h3 class="heading-secondary">
+                Comments
+            </h3>
+            {% for comment in post.comments.all %}
+            <div class="comment">
+                <h3 class="text-info">{{ comment.author }}</h3>
+                <small class="heading-tertiary u-margin-bottom-small">{{ comment.created_date }}</small>
+                <p class="paragraph">{{ comment.text}}</p><br>
+            </div>
+            {% empty %}
+            <div class="comment">
+                <p>No comments here yet:(</p>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+
+</section>
+
+
+{% endblock post %}

@@ -1,0 +1,47 @@
+{% extends "blog/base.html" %} {% block post %}
+
+<section class="section-book ">
+    <div class="row">
+        <div class="col">
+
+            <div class="book">
+                <div class="book__form">
+                    <div class="u-margin-bottom-medium">
+                        <h1 class="heading-secondary">
+                            Logout
+                        </h1>
+
+                    </div>
+                    <div class="media text-success">
+                        <div class="media-body">
+                            <h2 class="account-heading text-danger">
+                                You hav been logged out!
+                            </h2><br>
+                            <h2>
+                                <small>
+                                    Thank you for visiting our website!
+                                </small>
+                            </h2>
+
+                            <p class="paragragh font-weight-bold">
+                                <h4>Co-ordinator: Mr. Friday Ndiigbo</h4>
+                            </p>
+                        </div>
+                    </div>
+
+                    <h3>
+                        <small class="text-muted">
+                            <a href="{% url 'users:login' %}">
+                                Log In Again
+                            </a>
+                        </small>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+{% endblock post %}

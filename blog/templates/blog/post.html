@@ -1,0 +1,103 @@
+{% extends "blog/base.html" %} {% load staticfiles %} {% block post %}
+
+<section class="section-blog">
+    <div class="header__logo-box">
+        <img src="{% static 'blog/img/tacc.jpg' %}" alt="Logo" class="header__logo">
+        <img src="{% static 'blog/img/nysc.jpg' %}" alt="Logo" class="header__logo">
+    </div>
+    <div class="bg-video">
+        <video class="bg-video__content" autoplay muted loop>
+            <source src="{% static 'blog/img/bible.mov' %}" type="video/webm">
+            your browser does not support this video
+        </video>
+    </div>
+    <div class="u-center-text u-margin-bottom-big">
+        <h2 class="heading-secondary">
+            taccf blog
+        </h2>
+    </div>
+
+    <div class="row">
+        <div class="col-2-of-3">
+            {% for post in posts %}
+            <div class="blog">
+                <figure class="blog__shape">
+                    <img src="{{ post.author.profile.image.url }}" alt="profile picture" class="blog__img">
+                    <figcaption class="blog__caption">
+                        <a class="text-white font-weight-bold">{{ post.author.first_name }}
+                            {{ post.author.last_name }}</a>
+                    </figcaption>
+                </figure>
+                <div class="blog__post-box">
+                    <h3><a class="text-success"
+                            href="{% url 'blog:user-posts' post.author.username %}">{{ post.author }}</a></h3>
+                    <h3><a href="{% url 'blog:post-detail' post.id %}" class="heading-tertiary u-margin-bottom-small">
+                            {{ post.title }}
+                        </a></h3>
+                    <small class="heading-tertiary u-margin-bottom-small">{{ post.date_posted | date:"F d, Y" }}</small>
+                    {% if post.content|length > 300 %}
+                    <p class="paragraph">{{ post.content | truncatechars:300 }}</p>
+                    <div class="float-right u-center-text u-margin-top-medium">
+                        <a href="{% url 'blog:post-detail' post.id %}" class="btn-text">Read More &rarr;</a>
+                    </div>
+                    {% else %}
+                    <p class="paragraph">{{ post.content }}</p>
+                    {% endif %}
+                    <p>{{ post.text|linebreaksbr }}</p>
+                    <a href="{% url 'blog:post-detail' pk=post.pk %}">
+                        Comments: {{ post.comments.count }}
+                    </a>
+                </div>
+            </div><br><br>
+            {% endfor %}
+
+
+        </div>
+
+        <div class="col-1-of-3">
+            <div class="blog-message message">
+                <div class="heading-secondary-message ">
+                    <h3 class="heading-tertiary-message u-margin-bottom-small">message</h3>
+                    <div class="message-color" id="ourmanna-verse">
+                        Loading...
+                    </div>
+                    <script src="http://www.ourmanna.com/verses/api/js/?order=random" type="text/javascript"></script>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col u-center-text">
+            {% if is_paginated %}
+            {% if page_obj.has_previous %}
+            <a href="?page=1" class="u-margin-right-medium btn-text">&larr; First</a>
+            <a href="?page={{ page_obj.previous_page_number }}" class="u-margin-right-medium btn-text">&larr;
+                Previous</a>
+
+            {% endif %}
+
+            {% for num in page_obj.paginator.page_range %}
+            {% if page_obj.number == num %}
+            <a href="?page={{ num }}" class="u-margin-right-medium btn-text">{{ num }}</a>
+            {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+            <a href="?page={{ num }}" class="u-margin-right-medium btn-text">{{ num }}</a>
+
+            {% endif %}
+            {% endfor %}
+
+            {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}" class="u-margin-right-medium btn-text">Next &rarr;</a>
+            <a href="?page={{ page_obj.paginator.num_pages }}" class="u-margin-right-medium btn-text">Last &rarr; </a>
+            {% endif %}
+            {% endif %}
+        </div>
+    </div>
+
+
+</section>
+
+
+{% endblock post %}

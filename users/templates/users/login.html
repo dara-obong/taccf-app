@@ -1,0 +1,52 @@
+{% extends "blog/base.html" %} {% load crispy_forms_tags %} {% block post %}
+
+<section class="section-book" id="section-book">
+    <div class="row">
+        <div class="col">
+
+            <div class="book">
+                <div class="book__form">
+
+                    <form method="POST" class="form">
+                        {% csrf_token %}
+                        <div class="u-margin-bottom-medium">
+                            <h1 class="heading-secondary">
+                                Login
+                            </h1>
+                            <p class="heading-tertiary text-danger">
+                                <small>
+                                    notice: this section is for members only!!!
+                                </small>
+                            </p>
+                        </div>
+
+                        <h3 class="text-success">
+                            {{ form | crispy }}
+                        </h3>
+                        <br><br>
+                        <div class="form__group">
+                            <button class="btn btn--white">
+                                Login &rarr;
+                            </button><br><br>
+                            <h3>
+
+                                <small>
+                                    <a href="{% url 'password_reset' %}">Forgot Password?</a>
+                                </small>
+                            </h3>
+                            <h3>
+
+                                <small>
+                                    Need An Account?<a class="ml-2" href="{% url 'users:register' %}">Sign Up</a>
+                                </small>
+                            </h3>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+{% endblock post %}

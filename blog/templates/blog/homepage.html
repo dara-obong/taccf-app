@@ -1,0 +1,344 @@
+{% extends "blog/base.html" %} {% load staticfiles %} {% block content %}
+
+<header class="header">
+    <div class="header__logo-box">
+        <img src="{% static 'blog/img/tacc.jpg' %}" alt="Logo" class="header__logo">
+        <img src="{% static 'blog/img/nysc.jpg' %}" alt="Logo" class="header__logo">
+    </div>
+
+    <div class="header__text-box">
+        <h1 class="heading-primary">
+            <span class="heading-primary--main">taccf</span>
+            <span class="heading-primary--sub">the apostolic church corpers fellowship</span>
+        </h1>
+        <a href="{% url 'users:list_of_members' %}" class="btn btn--white btn--animated">
+            taccf members
+        </a>
+    </div>
+</header>
+
+<main>
+    <section class="section-about">
+        <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary">
+                welcome to our website
+            </h2>
+        </div>
+
+        <div class="row">
+            <div class="col-1-of-2">
+                <h3 class="heading-tertiary u-margin-bottom-small">
+                    brief history about taccf
+                </h3>
+                <p class="paragraph">
+                    ‘’Write the vision, and make it plain upon tables, that he may run that readeth it. For the vision
+                    is yet for an appointed time,’’ says the Word of the Lord in Habakkuk 2:2-3. For every new
+                    beginning, there requires a recording process, for posterity sake and for memories of a landmark
+                    achievement.<br><br>
+                    All over Nigeria, The Apostolic Church Nigeria commonly abbreviated as TACN is one of the renowned
+                    Pentecostal churches with its spheres of influence in every known part and tribe of the country.
+                    Some of the church's territories are LAWNA, Maritime, Akwa Ibom, Cross Rivers, Igboland etc. It is
+                    not limited to Nigeria, but known all over the world. The National headquarters is in Lagos. TACN
+                    has a tertiary student arm known as The Apostolic Church Students’ Fellowship of Nigeria (TACSFON).
+
+
+                </p>
+                <h3 class="heading-tertiary u-margin-bottom-small">
+                    Vision and Mision of taccf
+                </h3>
+                <p class="paragraph">
+                    We pray that the Almighty God continue to bless and multiply you as you plan to be with us in
+                    his presence in Jesus name. Thanks, in anticipation and God bless you.
+                    Yours in service
+                </p>
+
+                <a href="{% url 'home:blog-about' %}" class="btn-text">
+                    Learn more &rarr;
+                </a>
+
+            </div>
+            <div class="col-1-of-2">
+                <div class="composition">
+
+                    <img src="{% static 'blog/img/Outreach_4.jpg' %}" alt="photo 4"
+                        class="composition__photo composition__photo--p4">
+                    <img src="{% static 'blog/img/Outreach.jpg' %}" alt="photo 1"
+                        class="composition__photo composition__photo--p1">
+                    <img src="{% static 'blog/img/outreach_2.jpg' %}" alt="photo 2"
+                        class="composition__photo composition__photo--p2">
+                    <img src="{% static 'blog/img/ub_birthday.jpg' %}" alt="photo 5"
+                        class="composition__photo composition__photo--p5">
+                    <img src="{% static 'blog/img/batch-b.jpg' %}" alt="photo 3"
+                        class="composition__photo composition__photo--p3">
+                    <img src="{% static 'blog/img/hospital.jpg' %}" alt="photo 6"
+                        class="composition__photo composition__photo--p6">
+                    <h3 class="heading-secondary-2 u-margin-bottom-small composition-gallery">
+                        gallery
+                    </h3>
+                </div><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1-of-3">
+                <h3 class="heading-tertiary u-margin-bottom-small">
+                    rugged evangelism
+                </h3>
+                <p class="paragraph">
+                    Calvary greetings in the name of our Lord and savior Jesus Christ. It is with great joy in our
+                    hearts that we the excos and the entire members of the above-named fellowship humbly writes to
+                    invite you to the send forth ceremony of our beloved 2018 batch A corps member and presentation
+                    of certificates to our esteemed matrons/patrons/advisers of this fellowship. The programme is
+                    slated as follows;
+
+                </p>
+            </div>
+            <div class="col-1-of-3">
+                <h3 class="heading-tertiary u-margin-bottom-small">
+                    motto
+                </h3>
+                <p class="paragraph">
+                    Calvary greetings in the name of our Lord and savior Jesus Christ. It is with great joy in our
+                    hearts that we the excos and the entire members of the above-named fellowship humbly writes to
+                    invite you to the send forth ceremony of our beloved 2018 batch A corps member and presentation
+                    of certificates to our esteemed matrons/patrons/advisers of this fellowship. The programme is
+                    slated as follows;
+
+                </p>
+            </div>
+            <div class="col-1-of-3">
+                <h3 class="heading-tertiary u-margin-bottom-small">
+                    Aim and Objectives
+                </h3>
+                <p class="paragraph">
+                    Calvary greetings in the name of our Lord and savior Jesus Christ. It is with great joy in our
+                    hearts that we the excos and the entire members of the above-named fellowship humbly writes to
+                    invite you to the send forth ceremony of our beloved 2018 batch A corps member and presentation
+                    of certificates to our esteemed matrons/patrons/advisers of this fellowship. The programme is
+                    slated as follows;
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-features">
+        <div class="row">
+            <div class="col-1-of-4">
+                <div class="feature-box">
+                    <i class="feature-box__icon icon-basic-map"></i>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Contact Us</h3>
+                    <p class="feature-box__text">
+                        TACCF Co-ordinator: Mr. Friday Indiigbo<br>
+                        phone_no: 07036909063
+                    </p>
+                </div>
+            </div>
+            <div class="col-1-of-4">
+                <div class="feature-box">
+                    <i class="feature-box__icon icon-basic-compass"></i>
+
+                    <h3 class="heading-tertiary u-margin-bottom-small">Follow Us</h3>
+                    <p class="feature-box__text">
+                        Get live updates from our page<br>
+                        Whatsapp: TACCF Rivers State Chapter
+                    </p>
+                </div>
+            </div>
+            <div class="col-1-of-4">
+                <div class="feature-box">
+                    <i class="feature-box__icon icon-basic-heart"></i>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Support Us</h3>
+                    <p class="feature-box__text">
+                        Account Name: TAC Rivers State
+                        Account Number: 0210878735
+                        Bank: GT-Bank
+                        Savings Account
+
+                    </p>
+                </div>
+            </div>
+            <div class="col-1-of-4">
+                <div class="feature-box">
+                    <i class="feature-box__icon icon-basic-world"></i>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Email</h3>
+                    <p class="feature-box__text">
+                        Send you thoughts and suggestions to us<br>
+                        Email: teyo2012@gmail.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-posts">
+        <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary">
+                Latest Posts
+            </h2>
+        </div>
+        <div class="row">
+
+
+            {% for post in posts %}
+            <div class="col-1-of-3">
+
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <div class="card__picture card__picture--1">
+                            &nbsp;
+                        </div>
+                        <h4 class="card__heading">
+                            <span class="card__heading-span card__heading-span--1">
+                                {{ post.title }}
+                            </span>
+                        </h4>
+                        <div class="card__details">
+                            {% if post.content|length > 200 and post.title|length >= 15 %}
+                            <p class="paragraph">
+                                {{ post.content | truncatechars:200}}
+
+                            </p>
+
+                            {% elif post.content|length > 200 and post.title|length < 15 %}
+                            <p class="paragraph">
+                                {{ post.content | truncatechars:200}}
+
+                            </p>
+
+                            {% else %}
+                            <p class="paragraph">
+                                {{ post.content }}
+
+                            </p>
+                            {% endif %}
+
+                        </div>
+
+                    </div>
+                    <div class="card__side card__side--back card__side--back-1">
+                        <div class="card__cta">
+                            <div class="card__owner-box">
+                                <div class="card__owner-phone_no heading-tertiary">
+                                    {{ post.author.profile.get_status_display }}</div>
+                                <div class="card__owner-name">{{ post.author }}</div>
+                            </div>
+                            {% if user.is_authenticated %}
+                            <a href="{% url 'users:users_profile' pk=post.author.pk %}"
+                                class="btn btn--blue">{{ post.author.first_name }}
+                                {{ post.author.last_name }}'s Profile </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+        {% if page_obj.paginator.count >= 1 and user.is_authenticated %}
+        <div class="u-center-text u-margin-top-huge">
+            <a href="{% url 'blog:blog-posts' %}" class="btn btn--white">view all posts</a>
+        </div>
+        {% elif page_obj.paginator.count < 1 and user.is_authenticated %}
+        <h4 class="paragraph">No posts yet</h4>
+        {% elif page_obj.paginator.count < 1 %}
+        <h4 class="paragraph">No posts yet</h4>
+        {% else %}
+        <div class="u-center-text u-margin-top-huge">
+            <a href="{% url 'blog:blog-posts' %}" class="btn btn--white">view all posts</a>
+        </div>
+        {% endif %}
+
+
+    </section>
+
+
+
+
+
+
+
+
+</main>
+
+<footer class="footer">
+    <div class="footer__logo-box">
+        <div class="row  justify-content-center">
+            <img alt="full logo" class="footer__logo" src="{% static 'blog/img/tacc.jpg' %}">
+
+            <img alt="full logo" class="footer__logo" src="{% static 'blog/img/nysc.jpg' %}">
+        </div>
+        <p class="heading-secondary">
+            the apostolic church corpers fellowship
+        </p>
+    </div>
+    <div class="row">
+        <div class="col-1-of-2">
+            <div class="footer__navigation">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <div class="popups" onclick="myFunction()">
+                            co-ordinator
+                            <span class="popuptext" id="myPopup" style="background-color:rgb(34, 30, 5);">
+                                <img style="height: 35px; width: 35px;" class="rounded-circle article-img"
+                                    src="{% static 'blog/img/phone.jpg' %}" /><br>
+                                TACCF Co-ordinator: <span class="text-warning"> Mr. Friday Indiigbo </span><br>
+                                phone_no: <span class="text-warning"> 07036909063 </span></span>
+                        </div>
+
+                    </li>
+                    <li class="footer__item">
+                        <div class="popups" onclick="myContact()">
+                            social media
+                            <span class="popuptext" id="myContact" style="background-color:rgb(34, 30, 5);">
+                                <img style="height: 35px; width: 35px;" class="rounded-circle article-img"
+                                    src="{% static 'blog/img/wa.jpg' %}" /><br>
+                                Get live updates from our page<br>
+                                Whatsapp: <span class="text-warning"> TACCF Rivers State Chapter</span> </span>
+                        </div>
+                    </li>
+                    <li class="footer__item">
+                        <div class="popups" onclick="mySupport()">
+                            Support
+                            <span class="popuptext" id="mySupport" style="background-color:rgb(34, 30, 5);">
+                                <img style="height: 35px; width: 35px;" class="rounded article-img"
+                                    src="{% static 'blog/img/atm.jpg' %}" /><br>
+                                Account Name: TAC Rivers State<br>
+                                Account Number: <span class="text-warning">0210878735</span><br>
+                                Bank:<span class="text-warning"> GT Savings </span>Account
+
+                            </span>
+                        </div>
+                    </li>
+                    <li class="footer__item">
+                        <div class="popups" onclick="myEmail()">
+                            Email
+                            <span class="popuptext" id="myEmail" style="background-color:rgb(34, 30, 5);">
+                                <img style="height: 35px; width: 35px;" class="rounded-circle article-img"
+                                    src="{% static 'blog/img/email.jpg' %}" /><br>
+                                Send you thoughts and suggestions to us<br>
+                                Email: <span class="text-warning"> teyo2012@gmail.com </span></span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="footer__item">
+                        <div class="popups" onclick="myDeveloper()">
+                            developer
+                            <span class="popuptext" id="myDeveloper" style="background-color:rgb(34, 30, 5);">
+                                <img style="height: 35px; width: 35px;" class="rounded-circle article-img"
+                                    src="{% static 'blog/img/photo.jpg' %}" /><br>
+                                <span class="text-warning"> theodore eyo </span>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-1-of-2">
+            <p class=" footer__copyright footer__item">
+                © Copyright 2019 The Apostolic Church Corpers Fellowship. All rights reserved. Privacy Policy 2019
+            </p>
+        </div>
+</footer>
+
+
+{% endblock %}
