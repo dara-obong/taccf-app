@@ -139,6 +139,7 @@ MEDIA_URL = '/media/'
 
 
 
+
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST ='smtp.gmail.com'
 EMAIL_HOST_USER = 'teyo2012@gmail.com'
@@ -156,3 +157,5 @@ AWS_DEFAULT_ACL = None
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 django_heroku.settings(locals())
+
+SECURE_SSL_REDIRECT = True
