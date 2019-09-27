@@ -12,7 +12,7 @@ class Profile(models.Model):
     image = models.ImageField(default='default.jpg', upload_to='profile_pics')
     state_of_origin = models.CharField(max_length=20, default='')
     age = models.IntegerField(default=0)
-    phone_no = models.IntegerField(default=0)
+    phone_no = models.BigIntegerField(default=0)
     address = models.CharField(max_length = 100, default ='')
     sex = (
         ('m','Male'),
