@@ -1634,18 +1634,20 @@ body {
 .book-profile {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 40%, transparent 50%), url(../img/johnson_williams.jpg);
   background-size: cover;
+  background-position: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(53, 44, 32, 0.2); }
   @media (max-width: 75em) {
     .book-profile {
       background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 55%, transparent 65%), url(../img/johnson_williams.jpg);
-      background-size: cover; } }
+      background-size: cover;
+    background-position: center; } }
   @media (max-width: 56.25em) {
     .book-profile {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/johnson_williams.jpg); } }
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 45%, transparent 85%), url(../img/johnson_williams.jpg); } }
   .book-profile__form {
     width: 50%;
-    padding: 6rem; }
+    padding: 4rem; }
     @media (max-width: 75em) {
       .book-profile__form {
         width: 65%; } }
@@ -1656,18 +1658,20 @@ body {
 .book-register {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 40%, transparent 50%), url(../img/sola.jpg);
   background-size: cover;
+  background-position: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(53, 44, 32, 0.2); }
   @media (max-width: 75em) {
     .book-register {
       background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 55%, transparent 65%), url(../img/sola.jpg);
-      background-size: cover; } }
+      background-size: cover;
+    background-position: center; } }
   @media (max-width: 56.25em) {
     .book-register {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/sola.jpg); } }
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 45%, transparent 85%), url(../img/sola.jpg); } }
   .book-register__form {
     width: 50%;
-    padding: 6rem; }
+    padding: 4rem; }
     @media (max-width: 75em) {
       .book-register__form {
         width: 65%; } }
