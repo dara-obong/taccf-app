@@ -1560,19 +1560,19 @@ body {
       padding: 10rem 0; } }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 40%, transparent 50%), url(../img/christy.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 40%, transparent 50%), url(../img/chris.jpg);
   background-size: cover;
   background-position: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(53, 44, 32, 0.2); }
   @media (max-width: 75em) {
     .book {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 55%, transparent 65%), url(../img/christy.jpg);
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 55%, transparent 65%), url(../img/chris.jpg);
       background-size: cover;
     background-position: center; } }
   @media (max-width: 56.25em) {
     .book {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/christy.jpg); } }
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/chris.jpg); } }
   .book__form {
     width: 50%;
     padding: 6rem; }
@@ -1584,19 +1584,19 @@ body {
         width: 100%; } }
 
 .book-login {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 40%, transparent 50%), url(../img/chris.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 40%, transparent 50%), url(../img/christy.jpg);
   background-size: cover;
   background-position: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(53, 44, 32, 0.2); }
   @media (max-width: 75em) {
     .book-login {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 55%, transparent 65%), url(../img/chris.jpg);
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 55%, transparent 65%), url(../img/christy.jpg);
       background-size: cover;
     background-position: center; } }
   @media (max-width: 56.25em) {
     .book-login {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/chris.jpg); } }
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/christy.jpg); } }
   .book-login__form {
     width: 50%;
     padding: 6rem; }
