@@ -1572,13 +1572,13 @@ body {
     background-position: center; } }
   @media (max-width: 56.25em) {
     .book {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/chris.jpg); } }
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 45%, transparent 85%), url(../img/chris.jpg); } }
   .book__form {
     width: 50%;
-    padding: 6rem; }
+    padding: 4rem; }
     @media (max-width: 75em) {
       .book__form {
-        width: 65%; } }
+        width: 75%; } }
     @media (max-width: 56.25em) {
       .book__form {
         width: 100%; } }
@@ -1596,13 +1596,13 @@ body {
     background-position: top; } }
   @media (max-width: 56.25em) {
     .book-post {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/sisters3.jpg); } }
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 45%, transparent 85%), url(../img/sisters3.jpg); } }
   .book-post__form {
     width: 50%;
-    padding: 6rem; }
+    padding: 4rem; }
     @media (max-width: 75em) {
       .book-post__form {
-        width: 65%; } }
+        width: 75%; } }
     @media (max-width: 56.25em) {
       .book-post__form {
         width: 100%; } }
