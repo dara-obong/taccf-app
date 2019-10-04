@@ -1162,7 +1162,7 @@ body {
   position: relative; }
   @media (max-width: 37.5em) {
     .members-list {
-      background-image: linear-gradient(to right bottom, #d5b56fe0, #b1852779), url(../img/sisters3.jpg);
+      background-image: linear-gradient(to right bottom, #d5b56fe0, #b1852779), url(../img/members.jpg);
       background-position: center;
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 85%);
       clip-path: polygon(0 0, 100% 0, 100% 85%, 0 85%); } }
@@ -1194,7 +1194,7 @@ body {
   position: relative; }
   @media (max-width: 37.5em) {
     .exco-list {
-      background-image: linear-gradient(to right bottom, #d5b56fe0, #b1852779), url(../img/members.jpg);
+      background-image: linear-gradient(to right bottom, #d5b56fe0, #b1852779), url(../img/sisters4.jpg);
       background-position: center;
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 85%);
       clip-path: polygon(0 0, 100% 0, 100% 85%, 0 85%); } }
@@ -1223,7 +1223,7 @@ body {
   @media (max-width: 37.5em) {
     .nonexco-list {
       background-image: linear-gradient(to right bottom, #d5b56fe0, #b1852779), url(../img/rejoice.jpg);
-      background-position: center;
+      background-position: top;
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 85%);
       clip-path: polygon(0 0, 100% 0, 100% 85%, 0 85%); } }
   .nonexco-list__logo-box {
