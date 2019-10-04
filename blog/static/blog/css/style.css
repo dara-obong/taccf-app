@@ -1162,8 +1162,8 @@ body {
   position: relative; }
   @media (max-width: 37.5em) {
     .members-list {
-      background-image: linear-gradient(to right bottom, #d5b56fe0, #b1852779), url(../img/mofat2.jpg);
-      background-position: top;
+      background-image: linear-gradient(to right bottom, #d5b56fe0, #b1852779), url(../img/sisters3.jpg);
+      background-position: center;
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 85%);
       clip-path: polygon(0 0, 100% 0, 100% 85%, 0 85%); } }
   .members-list__logo-box {
@@ -1194,6 +1194,8 @@ body {
   position: relative; }
   @media (max-width: 37.5em) {
     .exco-list {
+      background-image: linear-gradient(to right bottom, #d5b56fe0, #b1852779), url(../img/members.jpg);
+      background-position: center;
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 85%);
       clip-path: polygon(0 0, 100% 0, 100% 85%, 0 85%); } }
   .exco-list__logo-box {
@@ -1220,6 +1222,8 @@ body {
   position: relative; }
   @media (max-width: 37.5em) {
     .nonexco-list {
+      background-image: linear-gradient(to right bottom, #d5b56fe0, #b1852779), url(../img/rejoice.jpg);
+      background-position: center;
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 85%);
       clip-path: polygon(0 0, 100% 0, 100% 85%, 0 85%); } }
   .nonexco-list__logo-box {
@@ -1242,7 +1246,7 @@ body {
 
 .passedout-list {
   height: 50vh;
-  background-image: linear-gradient(to right bottom, #d5b56fe0, #b1852779), url(../img/dove.jpg);
+  background-image: linear-gradient(to right bottom, #d5b56fe0, #b1852779), url(../img/praying_child2.jpg);
   background-size: cover;
   background-position: center;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
@@ -1250,6 +1254,8 @@ body {
   position: relative; }
   @media (max-width: 37.5em) {
     .passedout-list {
+      background-image: linear-gradient(to right bottom, #d5b56fe0, #b1852779), url(../img/mofat2.jpg);
+      background-position: top;
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 85%);
       clip-path: polygon(0 0, 100% 0, 100% 85%, 0 85%); } }
   .passedout-list__logo-box {
