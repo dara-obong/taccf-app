@@ -1163,6 +1163,7 @@ body {
   @media (max-width: 37.5em) {
     .members-list {
       background-image: linear-gradient(to right bottom, #d5b56fe0, #b1852779), url(../img/mofat2.jpg);
+      background-position: top;
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 85%);
       clip-path: polygon(0 0, 100% 0, 100% 85%, 0 85%); } }
   .members-list__logo-box {
