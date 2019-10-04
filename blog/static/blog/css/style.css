@@ -1560,19 +1560,19 @@ body {
       padding: 10rem 0; } }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 40%, transparent 50%), url(../img/sisters3.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 40%, transparent 50%), url(../img/chris.jpg);
   background-size: cover;
   background-position: top;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(53, 44, 32, 0.2); }
   @media (max-width: 75em) {
     .book {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 55%, transparent 65%), url(../img/sisters3.jpg);
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 55%, transparent 65%), url(../img/chris.jpg);
       background-size: cover;
     background-position: top; } }
   @media (max-width: 56.25em) {
     .book {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/sisters3.jpg); } }
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/chris.jpg); } }
   .book__form {
     width: 50%;
     padding: 6rem; }
@@ -1581,6 +1581,30 @@ body {
         width: 65%; } }
     @media (max-width: 56.25em) {
       .book__form {
+        width: 100%; } }
+
+.book-post {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 40%, transparent 50%), url(../img/sisters3.jpg);
+  background-size: cover;
+  background-position: top;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(53, 44, 32, 0.2); }
+  @media (max-width: 75em) {
+    .book-post {
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 55%, transparent 65%), url(../img/sisters3.jpg);
+      background-size: cover;
+    background-position: top; } }
+  @media (max-width: 56.25em) {
+    .book-post {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/sisters3.jpg); } }
+  .book-post__form {
+    width: 50%;
+    padding: 6rem; }
+    @media (max-width: 75em) {
+      .book-post__form {
+        width: 65%; } }
+    @media (max-width: 56.25em) {
+      .book-post__form {
         width: 100%; } }
 
 .book-login {
