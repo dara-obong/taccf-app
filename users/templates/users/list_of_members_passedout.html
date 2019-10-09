@@ -94,7 +94,7 @@
 
     {% else %}
     {% for user in users %}
-    {% if user.profile.get_office_display == 'NIL' and user.profile.get_status_display == 'Passed-Out' %}
+    {% if user.profile.get_status_display == 'Passed-Out' %}
     <tbody class="table table-striped table-secondary text-secondary">
         <tr>
             <th scope="row">
