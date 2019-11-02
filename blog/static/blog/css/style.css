@@ -1640,14 +1640,14 @@ body {
         width: 100%; } }
 
 .book-profile {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 40%, transparent 50%), url(../img/rejoys.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 40%, transparent 50%), url(../img/johnson_williams.jpg);
   background-size: cover;
   background-position: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(53, 44, 32, 0.2); }
   @media (max-width: 75em) {
     .book-profile {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 55%, transparent 65%), url(../img/rejoyce.jpg);
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 40%, transparent 50%), url(../img/rejoys.jpg);
       background-size: cover;
     background-position: center; } }
   @media (max-width: 56.25em) {
