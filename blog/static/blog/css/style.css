@@ -1647,12 +1647,12 @@ body {
   box-shadow: 0 1.5rem 4rem rgba(53, 44, 32, 0.2); }
   @media (max-width: 75em) {
     .book-profile {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 55%, transparent 65%), url(../img/rejoys.jpg);
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 55%, transparent 65%), url(../img/rejoyce.jpg);
       background-size: cover;
     background-position: center; } }
   @media (max-width: 56.25em) {
     .book-profile {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 45%, transparent 85%), url(../img/rejoys.jpg); } }
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 45%, transparent 85%), url(../img/rejoyce.jpg); } }
   .book-profile__form {
     width: 50%;
     padding: 4rem; }
