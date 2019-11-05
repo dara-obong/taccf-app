@@ -16,14 +16,11 @@ class HomeView(ListView):
     context_object_name = 'posts'
     ordering = ('-date_posted')
     paginate_by = 3
-    title='Home'
-
-    def get_object(self,queryset=None):
-        return queryset.get(title=self.title)
 
 
 def about(request):
     return render(request, 'blog/about.html', {'title': 'About Us'})
+
 
 def post(request):
     context = {
