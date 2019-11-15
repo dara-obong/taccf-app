@@ -62,9 +62,11 @@
             <th scope="col">
                 <h3>Office</h3>
             </th>
+            {% if user.is_authenticated %}
             <th scope="col">
                 <h3>Phone Number</h3>
             </th>
+            {% endif %}
         </tr>
     </thead>
     {% if user.is_authenticated %}
